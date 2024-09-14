@@ -1,0 +1,107 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#headshot {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #808080;
+    padding: 2px;
+    margin: 8px;
+    border-radius: 150px;
+
+}
+
+main {
+    background-color: rgb(197, 197, 197);
+    padding: 4px;
+    color: #202020;
+    grid-area: main;
+}
+
+h2,h1 {
+    color: darkblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.experience {
+    border: inset 1px;
+    margin-bottom: 4px;
+    padding: 4px;
+    background-color: white;
+    color: #222;
+
+}
+
+.experience .title {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: #202020;
+    padding: 2px;
+    color: lightblue;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    grid-area: footer;
+}
+
+#menu{
+    float: right;
+}
+#menu li{
+display: inline;
+padding: 8px;
+background-color: rgb(42, 40, 40);
+}
+#menu li a{
+    color: white !important;
+    text-decoration: none;
+}
+#menu li .active{
+    background-color: darkslateblue;
+}
+
+/*header #headshot, header #sideName, header #menu{
+display: inline;
+vertical-align: middle;
+}*/
+header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    grid-area: header;
+
+}
+header #menu{
+    margin-left: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-columns: auto 190px;
+
+}
+#formInfo{
+    font-size: 14px;
+    font-style: italic;
+}
+aside{
+    margin-left: 5px;
+}
+.div1{
+    display: grid;
+    grid-template-areas: 
+    "rightDiv1 rightDiv1"; /** help to you to know how to stucture the page knowing where is gonna be right,left,middle or bottom/
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+}
+.rouge{
+    color: red;
+}
